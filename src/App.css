@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+@import url('https://fonts.cdnfonts.com/css/shlop');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Agrega esto para evitar el margen inferior en Chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  body {
+    height: -webkit-fill-available !important;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Este código CSS configura el alto y el ancho de la página en un 100% y evita los márgenes predeterminados de los navegadores. Además, incluye un bloque @media que soluciona el problema específico que está experimentando en Chrome. Si el dispositivo tiene una relación de píxeles mínima de 0 (lo que significa básicamente cualquier dispositivo moderno), el código establece la altura del cuerpo en -webkit-fill-available, lo que debería solucionar el problema del margen inferior en Chrome.*/
+
+
+.App{
+  
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden !important;
+  background: #000200;
+  display: flex;
+  position: relative;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-direction: column;
+}
+
+.main{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  width: 1px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: -24vw -44vh 2px 2px #fff,38vw -4vh 0px 0px #fff,-20vw -48vh 1px 2px #fff,-39vw 38vh 3px 1px #fff,-42vw -11vh 0px 3px #fff,12vw 15vh 3px 3px #fff,42vw 6vh 3px 2px #fff,-8vw 9vh 0px 2px #fff,34vw -38vh 1px 0px #fff,-17vw 45vh 3px 1px #fff,22vw -36vh 3px 2px #fff,-42vw 1vh 1px 0px #fff;
+  animation: zoom 5s alternate infinite;
+}
+
+@keyframes zoom {
+  0%{
+      transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+
+  
+  
+  100%{
+      transform: scale(1.5);
   }
 }
+
+
+
+.card-image{
+  height: 140px;
+  width: 100px;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+opacity: 1;
+transition: opacity 0.5s ease-in-out;
+max-width: 100%;
+}
+
+.containerOculto{
+  opacity: 0;
+}
+
+.timer{
+  font-family: 'Shlop', sans-serif;
+  color: #3fd03f;
+  letter-spacing: 3px;
+  position: relative;
+  right: 550px;
+  top: -30px;
+display: none;
+font-size: 40px;
+}
+
+.timerRed{
+  color: #d61009 !important;
+
+}
+
+.intentos h3{
+  font-size: 25px;
+}
+
+.intentos span{
+  font-size: 30px;
+}
+
+.intentos{
+
+ font-size: 25px;
+  color: green;
+  position:relative;
+ font-family: 'Shlop', sans-serif;
+  color: #3fd03f;
+  letter-spacing: 3px;
+}
+ 
+
+.contadorIntentos{
+  display: none;
+flex-direction: column-reverse;
+position: relative;
+bottom: 120px;
+left: 550px;
+align-content: center;
+align-items: center;
+}
+

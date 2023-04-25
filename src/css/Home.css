@@ -1,0 +1,74 @@
+@import url('https://fonts.cdnfonts.com/css/shlop');
+
+.home{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.portada{
+    height: 380px;
+    width: 380px;
+}
+
+
+
+#jugar{
+    width: 130px;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    color: #3fd03f;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    font-family: 'Shlop', sans-serif;
+    position: relative;
+    border-color: #49ff49;
+    margin: 15px;
+    
+}
+
+#jugar:hover{
+    transform: scale(1.04);
+    background: rgb(49, 243, 49);
+    color:rgb(0, 0, 0)
+}
+
+@keyframes fadeInOut {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.botonAnimado{
+    animation-name: fadeInOut;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.timerAnimado{
+    animation-name: fadeInOut;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+

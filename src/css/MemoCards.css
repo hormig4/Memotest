@@ -1,0 +1,11 @@
+.container{
+    position: relative;
+    top: 0px;
+    background: none;
+    height: 500px !important;
+    width: 800px !important;
+    display: none;
+}
+
+
+

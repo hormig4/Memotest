@@ -1,0 +1,22 @@
+.container .card{
+    height: 140px !important;
+    width: 120px !important;
+    background: rgb(37, 131, 134);
+    display: inline-block;
+    margin: 5px;
+    height: calc(200px - 10px);
+    width: calc(250- 10px);
+    cursor: pointer;
+    border: solid 0.2px rgb(6, 54, 54);
+    }
+
+    .card:hover{
+        transform: scale(0.98);
+    }
+    
+
+    .card-image {
+        height: 140px;
+        width: 120px;
+    }
+    
